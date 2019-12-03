@@ -17,3 +17,4 @@ n/a
 
 ## Change Log
 12-02-2019 5:09 PM - Added menu.
+12-02-2019 6:12 PM - Added taking order & quit functions.
