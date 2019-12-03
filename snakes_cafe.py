@@ -5,10 +5,10 @@ menu = {
   'Drinks': ['Coffee', 'Tea', 'Unicorn Tears'],
 }
 
-def welcome():
+def print_welcome():
   print('*' * 38 + '\n' + '*' * 2 + ' ' * 4 + 'Welcome to the Snakes Cafe!' + ' ' * 3 + '*' * 2 + '\n' + '*' * 2 + ' ' * 4 + 'Please see our menu below.' + ' ' * 4 + '*' * 2 + '\n' + '*' * 2 + ' ' * 36 + '\n' + '*' * 2 + ' ' * 1 + 'To quit at any time, type "quit"' + ' ' * 1 + '*' * 2 + '\n' + '*' * 38 + '\n') 
 
-def order():
+def print_order():
   print('*' * 35 + '\n' + '*' * 2 + ' ' * 1 + 'What would you like to order?' + ' ' * 1 + '*' * 2 + '\n' + '*' * 35)
 
 def print_menu():
@@ -19,7 +19,19 @@ def print_menu():
       print(i)
     print ('\n')
 
-welcome()
-print_menu()
-order()
+def take_order():
+  orders = {}
+  order = input()
+  while order != 'quit':
+    if order in orders:
+      orders[order] += 1
+    else:
+      orders[order] = 1
+    print(f'** {orders[order]} of {order} have been added to your meal **'
+    )
+    order = input()
 
+print_welcome()
+print_menu()
+print_order()
+take_order()
