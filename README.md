@@ -7,7 +7,7 @@
 An application that welcomes users, allows users to order from a menu, as well as to exit.
 
 ## Getting Started
-The user is required to run the application by running the source codes in Python3.
+The users first needs to navigate to the folder where the source codes file is located (by using the cd command). The user is then required to run the application by running the source codes in Python3 (by typing "python3 snakes_cafe.py").
 
 ## Architecture
 This application is built using Python.
